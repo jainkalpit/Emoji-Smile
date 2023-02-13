@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes move {
+    from{
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        left: 100%;
+        top: 0px;
+        transform: rotate(360deg);
+    }  
+}
+.box .eyes-left{
+   
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.box  .eyes-right{
+   
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000; 
+}
+.box .mouth{
+    position: absolute;
+    height: 30px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    top: 90px;
+    left: 70px;
+}
+.box .chin{
+    height: 10px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    border-bottom: 2px solid;
+}
+.eyebrow{
+    height: 10px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-top: 2px solid;  
+}
+.eyebrows{
+    height: 10px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    border-top: 2px solid;  
+}
